@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Галерея фотографій</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея зображень</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>FOTO IMAGE LIST</h1>
+  <div class="container">
+    <header class="header">
+      <h1 class="gallery-title">Галерея світлин</h1>
+      <p class="gallery-info" id="gallery-info">Завантаження зображень...</p>
     </header>
-    <main>
-        <div id="gallery" class="gallery"></div>
-        <div class="buttons">
-            <button id="loadMore">Завантажити ще 4 картинки</button>
-            <button id="clearGallery">Очистити галерею</button>
-            <button id="removeLast">Видалити останню картинку</button>
-            <button id="reverseGallery">Перевернути галерею</button>
-            <button id="shuffleGallery">Перемішати галерею</button>
-        </div>
-    </main>
-    <script src="script.js"></script>
+
+    <main class="gallery" id="gallery"></main>
+
+    <div class="controls">
+      <button type="button" class="btn btn-primary" id="load-more-btn">
+        Завантажити ще 4 картинки
+      </button>
+      <button type="button" class="btn btn-secondary" id="reverse-btn">
+        Перевернути галерею
+      </button>
+      <button type="button" class="btn btn-warning" id="remove-last-btn">
+        Видалити останню картинку
+      </button>
+      <button type="button" class="btn btn-danger" id="clear-btn">
+        Очистити галерею
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
